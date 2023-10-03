@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea_P.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="16" CornerRadius="0">
+            <Label Text="Funciones Matematicas Tarea 1!" HorizontalTextAlignment="Start" TextColor="White" FontSize="22"/>
+        </Frame>
+
+        <Label Text="Numero 1" HorizontalTextAlignment="Start" FontSize="22"/>
+        <Entry Keyboard="Numeric"
+         Placeholder="Ingrese un Numero"
+         BackgroundColor="AliceBlue"
+         VerticalOptions="Center" x:Name="num1"/>
+
+        <Label Text="Numero 2" HorizontalTextAlignment="Start" FontSize="22"/>
+        <Entry Keyboard="Numeric"
+         Placeholder="Ingrese un Numero"
+          BackgroundColor="AliceBlue"
+          VerticalOptions="Center" x:Name="num2" />
+
+
+        <Button x:Name="btnsuma" TextColor="Black" BackgroundColor="beige" Text="Suma" Clicked="btnsuma_Clicked" Margin="10" />
+
+        <Button x:Name="btnresta" TextColor="Black" BackgroundColor="Beige" Text="Resta" Clicked="btnresta_Clicked" Margin="10" />
+
+        <Button x:Name="btndivision" TextColor="Black" BackgroundColor="Beige" Text="Division" Clicked="btndiv_Clicked" Margin="10" />
+
+        <Button x:Name="btnmultiplicacion" TextColor="Black" BackgroundColor="Beige" Text="Multiplicacion" Clicked="btnmul_Clicked" Margin="10" />
+
+    </StackLayout>
+
+</ContentPage>
